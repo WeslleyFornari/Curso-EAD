@@ -1,0 +1,27 @@
+.icon-menu {
+ 
+    width: 40px;
+    cursor: pointer;
+  }
+  
+  .icon-menu:before,
+  .icon-menu:after,
+  .icon-menu div {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 4px;
+    border-radius: 3px;
+    margin: 7px 0;
+    transition: 0.5s;
+  }
+  .icon-menu.active:before {
+    transform: translateY(12px) rotate(135deg);
+  }
+  .icon-menu.active:after {
+    transform: translateY(-12px) rotate(-135deg);
+  }
+  .icon-menu.active div {
+    transform: scale(0);
+  }
+  

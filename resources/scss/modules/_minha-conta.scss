@@ -1,0 +1,17 @@
+#minha-conta{
+    color: #fff;
+    .titulo{
+        color: #fff;
+    }
+    .nav-pills{
+        gap: 25px;
+        .nav-link{
+            color:#fff;
+            &.active,&:hover{
+                color:$link-hover;
+                background: rgba(255,255,255,0.1);
+            }
+        }
+       
+    }
+}

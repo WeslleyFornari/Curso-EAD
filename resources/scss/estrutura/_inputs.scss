@@ -1,0 +1,48 @@
+.custom-input{
+    width: 100%;
+    height: 42px;
+    border: none;
+    border-radius: 0;
+    background:#000;
+    border-radius: 6px;
+    padding: 5px 10px;
+    color: #fff;
+    border: 1px solid #ededed;
+    &:focus,&:focus-visible{
+        border: 1px solid rgb(1, 1, 65);
+    }
+    
+}
+.custom-select{
+    width: 100%;
+    height: 42px;
+    border: none;
+    border-radius: 0;
+    background:#000;
+    border-radius: 4px;
+    color: #fff;
+    &:focus,&:focus-visible{
+        border: 1px solid rgb(1, 1, 65);
+    }
+
+}
+
+.input-group {
+    .input-group-text{
+        background: none;
+        border: none;
+        color: #fff;
+    }
+
+& > .custom-input {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+}
+}
+.form-select{
+    background:#000;
+    color: #fff;
+    
+}

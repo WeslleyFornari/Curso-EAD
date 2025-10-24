@@ -1,0 +1,88 @@
+.trilhas{
+    .slick-list{
+        overflow-y: initial !important;
+        padding: 15px;
+    }
+    .slick-slide {
+        width: auto;
+    }
+    .item{
+        margin: 0 10px;
+        transition: 0.3s all linear;
+        position: relative;
+        a{
+            display: block;
+            text-align: center;
+        }
+        img{
+            transition: transform 0.3s, filter 0.3s;
+            border-radius: 8px;
+            display: inline-block;
+            max-width: 100%;
+            height: auto;
+        }
+        .locked{
+            position: absolute;
+            color: $yellow;
+            right: 10px;
+            top: 10px;
+            z-index: 4;
+            font-size: 0.85em;
+            
+        }
+        // &:before{
+        //     content: "";
+        //     position: absolute;
+        //     z-index: 3;
+        //     right: 0;
+        //     top: 0;
+        //     width: 0px;
+        //     height: 0px;
+        //     border-style: solid;
+        //     border-width: 0 45px 55px 0;
+        //     border-color: transparent #000000 transparent transparent;
+        //     transform: rotate(0deg);
+        // }
+        &:hover{
+            a{
+                position: relative;
+               
+                &:after{
+                    content: "";
+                    width: 200px;
+                    height: 200px;
+                    box-shadow: 0 0 20px 11px #ffffff;
+                    position: absolute;
+                    left: calc(50% - 100px);
+                    z-index: 0;
+                    top: calc(50% - 100px);
+                    background: #ffffff;
+                    transition: 0.3s all linear;
+                }
+            }
+            img {
+                filter: brightness(0.8);
+                transform: scale(1.05);
+                position: relative;
+                z-index: 2;
+            }
+        }
+    }
+    .slick-arrow{
+        background: #333;
+        position: absolute;
+        top: 50%;
+        height: 30px;
+        width: 30px;
+        border: none;
+        color: #fff;
+        z-index: 10;
+        &.slick-next-custom{
+            right: -15px;
+        }
+        &.slick-prev-custom{
+            left: -15px;
+        }
+
+    }
+}

@@ -1,0 +1,54 @@
+aside {
+
+    width: 0%;
+    max-width: 300px;
+    background: #161616;
+    min-height: 100%;
+    overflow: hidden;
+    transition: 0.3s all ease-in-out;
+    opacity: 0;
+    box-shadow: 12px 0px 20px 0px $blue;
+    &.open{
+        opacity: 1;
+        width: 40%;
+        &~main{
+            width: 80% !important;
+        }
+       
+    }
+    .content {
+       
+        .logo{
+            text-align: center;
+            margin: 20px 0;
+            margin-bottom: 20px;
+            padding: 25px 30px;
+            img{
+                height: 35px;
+                width: auto;
+                display: inline-block;
+            }
+        }
+    }
+
+    nav {
+        margin-top: 50px;
+        ul {
+            list-style: none;
+
+            li {
+                a{
+                    display: block;
+                    text-align: none;
+                    color: #fff;
+                    text-decoration: none;
+                    padding: 15px 20px;
+                    &:hover{
+                        color: $link-hover;
+                       
+                    }
+                }
+            }
+        }
+    }
+}

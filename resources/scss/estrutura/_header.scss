@@ -1,0 +1,18 @@
+header{
+    padding: 30px;
+    .minha-conta{
+        background: #333;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 5px;
+        color: #fff;
+        text-decoration: none;
+    }
+    .form-logout{
+        button{
+            background: none;
+            border: none;
+            color: #fff;
+        }
+    }
+}
